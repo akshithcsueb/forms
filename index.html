@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="infoForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="Male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required />
+        <label for="female">Female</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Languages:</legend>
+        <input type="checkbox" id="html" name="language" value="HTML" />
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="language" value="CSS" />
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="language" value="JavaScript" />
+        <label for="js">JavaScript</label>
+      </fieldset>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="USA">USA</option>
+        <option value="India">India</option>
+        <option value="UK">UK</option>
+        <!-- You can add more countries here -->
+      </select>
+
+      <input type="button" value="Submit" onclick="displayInfo()" />
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="scriptjquery.js"></script> -->
+  </body>
+</html>
